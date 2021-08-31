@@ -9,6 +9,7 @@ namespace LAB_SEGUNDA_PARTE.Negocio
     class ClsPersona
     {
 
+     
             public ClsPersona(string nombre, int edad, string sexo, int peso, double altura)
             {
                 calcularIMC(peso, altura);
@@ -19,12 +20,12 @@ namespace LAB_SEGUNDA_PARTE.Negocio
                 double calcularPeso;
 
                 calcularPeso = peso / (altura * altura);
-                if (calcularPeso < 18)
+                if (calcularPeso < 20)
                 {
                     calcularPeso = -1;
 
                 }
-                if (calcularPeso >= 18 && calcularPeso <= 24.9)
+                if (calcularPeso >= 20 && calcularPeso <= 24.9)
                 {
                     calcularPeso = 0;
                 }
@@ -59,35 +60,8 @@ namespace LAB_SEGUNDA_PARTE.Negocio
                 Console.WriteLine("Soy mayor?: " + mayor);
             }
 
-            private void comprobarSexo(char sexo)
-            {
-                if (sexo != 'H' || sexo != 'M')
-                {
-                    sexo = 'H';
-                }
-                Console.WriteLine(sexo);
-            }
 
-            public void toString()
-            {
-
-            }
-
-            private static void generaDNI()
-            {
-                int DNI;
-                int resultadoA;
-                int resultadoB;
-                int resultado;
-                string[] letras = new string[23] { "T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E" };
-                Random r = new Random();
-                DNI = r.Next(99999999);
-                resultadoA = DNI / 23;
-                resultadoB = resultadoA * 23;
-                resultado = DNI - resultadoB;
-                Console.WriteLine(DNI + "-" + letras[resultado]);
-
-            }
+           
     
 
 

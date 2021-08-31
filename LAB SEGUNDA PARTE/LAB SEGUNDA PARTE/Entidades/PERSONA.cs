@@ -45,11 +45,14 @@ namespace LAB_SEGUNDA_PARTE.Entidades
             Altura1 = altura1;
         }
 
+        public PERSONA(int peso, int altura)
+        {
+            Peso = peso;
+            Altura = altura;
+          
+        }
+
         
-
-
-
-
     }
 
 
