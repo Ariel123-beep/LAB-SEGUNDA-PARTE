@@ -58,6 +58,8 @@ namespace LAB_SEGUNDA_PARTE.Negocio
                     mayor = false;
                 }
                 Console.WriteLine("Soy mayor?: " + mayor);
+
+                
             }
 
 

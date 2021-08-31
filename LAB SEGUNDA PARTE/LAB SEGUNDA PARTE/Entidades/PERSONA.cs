@@ -23,39 +23,45 @@ namespace LAB_SEGUNDA_PARTE.Entidades
         public PERSONA(string nombre, string edad, string sexo, int peso, int altura)
         {
             Nombre = nombre;
-            Edad = edad;
-            Sexo = sexo;
-            Peso = peso;
-            Altura = altura;
+            this.Edad = edad;
+            this.Sexo = sexo;
+            this.Peso = peso;
+            this.Altura = altura;
         }
 
         public PERSONA(string nombre, string edad, string sexo)
         {
-            Nombre = nombre;
-            Edad = edad;
-            Sexo = sexo;
+            this.Nombre = nombre;
+            this.Edad = edad;
+            this.Sexo = sexo;
         }
 
         public PERSONA(string nombre, string edad, string sexo, int peso, int altura, string nombre1, string edad1, string sexo1, int peso1, int altura1) : this(nombre, edad, sexo, peso, altura)
         {
-            Nombre1 = nombre1;
-            Edad1 = edad1;
-            Sexo1 = sexo1;
-            Peso1 = peso1;
-            Altura1 = altura1;
+            this.Nombre1 = nombre1;
+            this.Edad1 = edad1;
+            this.Sexo1 = sexo1;
+            this.Peso1 = peso1;
+            this.Altura1 = altura1;
         }
 
         public PERSONA(int peso, int altura)
         {
-            Peso = peso;
-            Altura = altura;
+            this.Peso = peso;
+            this.Altura = altura;
           
         }
 
-        
+        public override string ToString()
+        {
+            return "La persona  de nombre " + Nombre + " de edad " + Edad + " Tiene un peso de " + Peso + " Y una altura de " + Altura;
+            
+        }
+
+       
     }
 
 
-
+    
 }
 
